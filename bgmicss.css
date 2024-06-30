@@ -1,0 +1,106 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f7f8fc, #eef1f5);
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    background: linear-gradient(90deg, #0a0f2c, #002651, #005da2);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  header img {
+    width: 100px;
+    height: auto;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  section:hover {
+    transform: translateY(-5px);
+  }
+  
+  section h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    color: #005da2;
+    font-family: 'Tahoma', sans-serif;
+  }
+  
+  section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background: #005da2;
+    color: white;
+  }
+  
+  table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(90deg, #0a0f2c, #002651, #005da2);
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.2);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
