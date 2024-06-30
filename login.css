@@ -13,16 +13,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    flex-direction: column; /* Change to column for better mobile layout */
+    padding: 20px; /* Add some padding for mobile */
 }
 
 #signupFormContainer, #loginFormContainer {
     background-color: #ffffff;
-    padding: 30px;
+    padding: 20px; /* Reduce padding for mobile */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 320px;
-    margin: 20px;
+    width: 100%; /* Set width to 100% for mobile */
+    max-width: 320px; /* Limit max width */
+    margin: 10px; /* Reduce margin for mobile */
 }
 
 h1 {
@@ -107,4 +110,27 @@ button[type="submit"]:hover {
 
 .forgot-password a:hover {
     color: #333333;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #signupFormContainer, #loginFormContainer {
+        padding: 15px;
+        margin: 5px;
+        width: 100%;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .navigation a {
+        padding: 8px 15px;
+    }
 }
