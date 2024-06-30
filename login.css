@@ -13,19 +13,19 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    flex-direction: column; /* Change to column for better mobile layout */
-    padding: 20px; /* Add some padding for mobile */
+    flex-direction: column;
+    padding: 20px;
 }
 
 #signupFormContainer, #loginFormContainer {
     background-color: #ffffff;
-    padding: 20px; /* Reduce padding for mobile */
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 100%; /* Set width to 100% for mobile */
-    max-width: 320px; /* Limit max width */
-    margin: 10px; /* Reduce margin for mobile */
+    width: 100%;
+    max-width: 320px;
+    margin: 10px;
 }
 
 h1 {
@@ -81,6 +81,9 @@ button[type="submit"]:hover {
 .navigation {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .navigation a {
@@ -91,6 +94,7 @@ button[type="submit"]:hover {
     border: 1px solid #007bff;
     border-radius: 3px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 5px;
 }
 
 .navigation a:hover {
@@ -115,7 +119,6 @@ button[type="submit"]:hover {
 /* Media Queries for Mobile View */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
         padding: 10px;
     }
 
@@ -130,7 +133,25 @@ button[type="submit"]:hover {
         font-size: 14px;
     }
 
+    .navigation {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
     .navigation a {
-        padding: 8px 15px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Media Queries for Laptop View */
+@media (min-width: 769px) {
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        margin: 5px;
     }
 }
